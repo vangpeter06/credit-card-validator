@@ -34,3 +34,6 @@ Code:
 const cardNumber = 4102080880435620;
 CardValidator(cardNumber);
 Expected Output: false
+
+Describe: CompanyValidator()
+

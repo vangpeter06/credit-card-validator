@@ -32,6 +32,21 @@ function CardValidator(number) {
   }
 }
 
+function CompanyValidator(number) {
+  let numberArray = stringToArray(number);
+  if (numberArray[0] === 3 && (numberArray[1] === 4 || numberArray[1] ===7)) {
+    return "American Express";
+  } else if (numberArray[0] === 4) {
+    return "Visa";
+  } else if (numberArray[0] === 5) {
+    return "Mastercard";
+  } else if (numberArray[0] === 6) {
+    return "Discover Card";
+  } else {
+    // not a valid card
+  }
+}
+
 const cardNumber = "4102080880435620";
 
 CardValidator(cardNumber);
